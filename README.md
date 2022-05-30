@@ -1,9 +1,10 @@
 # Find_the_Field
 Proyek ini akan membuat website yang dapat melakukan booking lapangan
 
-test 1
-test 2 
-test susanto
-test 5
+Karena proyek ini menggunakan PHP, kami harapkan anda sudah mendownload XAMPP dengan PHP versi 7 keatas
 
-testing
+Cara menjalankan website:
+1. Buka XAMPP, lalu nyalakan Apache dan MySQL.
+2. Buka situs http://localhost/phpmyadmin/ untuk memasukkan databasenya dengan cara membuat database baru dan sesuaikan nama database dengan database dengan ada pada proyek ini.
+3. Impor database yang ada pada proyek ini.
+4. Buka situs http://localhost/FInd_the_Field/ agar dapat membuka websitenya. 
