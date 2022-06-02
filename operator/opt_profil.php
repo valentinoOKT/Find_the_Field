@@ -56,7 +56,7 @@ if($_GET['lap']=="delete"){
 	unlink('assets/foto/'.$nama);
 	mysqli_query($koneksi,"delete from lapangan where id_lap = '$_GET[id_lap]'") or die (mysqli_error());
 	echo "<script language='javascript'>
-                    window.location='opt_profil.php';
+                    window.location='adm_profil.php';
                     </script>";
 }}?>
 <!-- Page Container -->
@@ -101,15 +101,15 @@ if($_GET['lap']=="delete"){
         <div class="w3-accordion w3-white">
           <button onclick="myFunction('Demo1')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> Data </button>
           <div id="Demo1" class="w3-accordion-content w3-container">
-            <a href="opt_profil.php">Lapangan</a>
-            <a href="opt_profil.php?url=konfirmasi"> Konfirmasi Pesan Online</a>
-            <a href="opt_profil.php?url=mBayOff"> Konfirmasi Main Bayar Offline</a>
+            <a href="adm_profil.php">Lapangan</a>
+            <a href="adm_profil.php?url=konfirmasi"> Konfirmasi Pesan Online</a>
+            <a href="adm_profil.php?url=mBayOff"> Konfirmasi Main Bayar Offline</a>
 
           </div>
 
           <button onclick="myFunction('Demo3')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-tags fa-fw w3-margin-right"></i> Pembayaran</button>
           <div id="Demo3" class="w3-accordion-content w3-container">
-			<a href="opt_profil.php?url=bayaroff"> Bayar Offline</a>
+			<a href="adm_profil.php?url=bayaroff"> Bayar Offline</a>
 			
           </div>
           
@@ -346,9 +346,9 @@ if($_GET['lap']=="delete"){
 							$simpan = mysqli_query($koneksi, "insert into transaksi values ('$id_book','$user','$id_lap',NOW(),'$bayarakhir','$tgl_main','$jam_mulai','$jamdur:00:00','$jenis_bayar','$total_harga','$status')");
 						
 						if($simpan){
-							echo "<script> alert(\"Silakan Lakukan Pembayaran\"); window.location = \"opt_profil.php?url=pesanbayaroff\"; </script>";
+							echo "<script> alert(\"Silakan Lakukan Pembayaran\"); window.location = \"adm_profil.php?url=pesanbayaroff\"; </script>";
 							} else {
-							echo "<script> alert(\"Maaf, terjadi kesalahan..!!\"); window.location = \"opt_profil.php?url=pesanoff\"; </script>";
+							echo "<script> alert(\"Maaf, terjadi kesalahan..!!\"); window.location = \"adm_profil.php?url=pesanoff\"; </script>";
 								}
 							}
 						
