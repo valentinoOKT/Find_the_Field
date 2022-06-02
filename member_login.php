@@ -7,7 +7,8 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Masuk sebagai member</h4>
       </div>
-        <form class="form-horizontal" action="" method="post">
+      <div class="modal-body">
+        <form class="form-horizontal" method="post" action="">
           <div class="form-group">
             <label class="control-label col-sm-3" for="username">Username</label>
             <div class="col-sm-8">
@@ -22,7 +23,7 @@
           </div>
           <div class="form-group">
             <div class="col-sm-offset-3 col-sm-9">
-              <button type="submit" class="btn btn-primary" name="loginmember"><span class="glyphicon glyphicon-log-in"></span>&nbsp; Masuk</button>
+              <button type="submit" class="btn btn-primary" name="loginmember" style="background-color:#3cacbd"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Masuk</button>
               Atau <a href="member/member_daftar.php">Mendaftar!</a>
             </div>
           </div>
@@ -32,6 +33,7 @@
         <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
       </div>
     </div>
+   
     <?php
 	include ("koneksi.php");
 	if(isset($_POST['loginmember'])){

@@ -10,7 +10,7 @@ if(isset($_SESSION['operator'])){
 	$sql_sel = mysqli_fetch_array($query_sel);
 	?>
     
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top" >
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -48,7 +48,7 @@ if(isset($_SESSION['operator'])){
 	$query_sel = mysqli_query($koneksi,$sql);
 	$sql_sel = mysqli_fetch_array($query_sel);
 	?>
- <nav class="navbar navbar-default navbar-fixed-top">
+ <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#0a942f;">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -58,7 +58,7 @@ if(isset($_SESSION['operator'])){
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../index.php">Find the Field</a>
+            <a class="navbar-brand" href="../index.php" style="color:white;">Find the Field</a>
           </div>
 
 
@@ -67,7 +67,7 @@ if(isset($_SESSION['operator'])){
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
               <li class="w3-hide-small w3-dropdown-hover">
-              <a href="#" class="w3-padding-large w3-hover-white">&nbsp;&nbsp;Hi, <?php echo $sql_sel['nama']; ?> &nbsp;<i class="fa fa-caret-down"></i></a>
+              <a href="#" class="w3-padding-large w3-hover-white" style="color:white;">&nbsp;&nbsp;Hi, <?php echo $sql_sel['nama']; ?> &nbsp;<i class="fa fa-caret-down"></i></a>
                 <div class="w3-dropdown-content w3-white w3-card-4">
                   <a href="member_profil.php"><i class="fa fa-user"></i>&nbsp;Accounts</a>
                   <!--<a href="#"><i class="fa fa-cog"></i>&nbsp;Settings</a>-->

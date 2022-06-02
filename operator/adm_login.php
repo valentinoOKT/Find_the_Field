@@ -23,7 +23,6 @@
           <div class="form-group">
             <div class="col-sm-offset-3 col-sm-9">
               <button type="submit" class="btn btn-primary" name="loginopt"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Masuk</button>
-              Atau <a href="opt_daftar.php">Mendaftar!</a>
             </div>
           </div>
         </form>
