@@ -100,7 +100,7 @@
 			$sql= "insert into lapangan values ('$id_lap','$jenis_rumput', '$filename', '$harga', '$no_lap', '$username')";
 			$query = mysqli_query($koneksi,$sql);
 			echo "<script language='javascript'>
-                    window.location='opt_profil.php';
+                    window.location='adm_profil.php';
                     </script>";
 			}
 			

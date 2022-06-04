@@ -52,7 +52,7 @@ if($_GET['lap']=="delete"){
 	unlink('assets/foto/'.$nama);
 	mysqli_query($koneksi,"delete from lapangan where id_lap = '$_GET[id_lap]'") or die (mysqli_error());
 	echo "<script language='javascript'>
-                    window.location='opt_profil.php';
+                    window.location='adm_profil.php';
                     </script>";
 }}?>
 <!-- Page Container -->

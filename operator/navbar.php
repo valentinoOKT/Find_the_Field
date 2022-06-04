@@ -31,7 +31,7 @@ if(isset($_SESSION['operator'])){
               <li class="w3-hide-small w3-dropdown-hover">
               <a href="#" class="w3-padding-large w3-hover-white">&nbsp;&nbsp;Hi, <?php echo $sql_sel['nama_opt']; ?> &nbsp;<i class="fa fa-caret-down"></i></a>
                 <div class="w3-dropdown-content w3-white w3-card-4">
-                  <a href="opt_profil.php"><i class="fa fa-user"></i>&nbsp;Accounts</a>
+                  <a href="adm_profil.php"><i class="fa fa-user"></i>&nbsp;Accounts</a>
                   <!--<a href="#"><i class="fa fa-cog"></i>&nbsp;Settings</a>-->
                   <a href="../logout.php"><i class="fa fa-sign-out"></i>&nbsp;Logout</a>
                 </div>

@@ -20,10 +20,10 @@ $query = mysqli_query($koneksi, $sql);
 }
 
 if($query){
-    echo "<script> alert(\"Data Berhasil Disimpan...!\"); window.location = \"opt_profil.php\"; </script>";
+    echo "<script> alert(\"Data Berhasil Disimpan...!\"); window.location = \"adm_profil.php\"; </script>";
 
 }else {
-    echo "<script> alert(\"Data Gagal Disimpan...!\"); window.location = \"opt_profil.php\"; </script>";
+    echo "<script> alert(\"Data Gagal Disimpan...!\"); window.location = \"adm_profil.php\"; </script>";
 }
 
 ?>

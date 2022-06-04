@@ -52,7 +52,7 @@
 					if($_POST['password'] == $cekpass){
 						session_start();
 						$_SESSION['operator']=$cekuser;
-							echo "<script> window.location = \"operator/opt_profil.php\"; </script>";
+							echo "<script> window.location = \"operator/adm_profil.php\"; </script>";
 						} else {
 							echo "<script> alert(\"Password Salah\"); window.location = \"index.php\"; </script>";
 						}

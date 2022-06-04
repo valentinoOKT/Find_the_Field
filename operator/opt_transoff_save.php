@@ -16,8 +16,8 @@ $status = 'Belum Bayar';
 $simpan = mysqli_query($koneksi, "insert into transaksi values ('$id_book','$user','$id_lap',NOW(),'$tgl_main','$jam_mulai','$jamdur:00:00','$jenis_bayar','$total_harga','$status')");
 
 if($simpan){
-	echo "<script> alert(\"Silakan Lakukan Pembayaran\"); window.location = \"opt_profil.php?url=pesanbayaroff\"; </script>";
+	echo "<script> alert(\"Silakan Lakukan Pembayaran\"); window.location = \"adm_profil.php?url=pesanbayaroff\"; </script>";
 	} else {
-	echo "<script> alert(\"Maaf, terjadi kesalahan..!!\"); window.location = \"opt_profil.php?url=pesanoff\"; </script>";
+	echo "<script> alert(\"Maaf, terjadi kesalahan..!!\"); window.location = \"adm_profil.php?url=pesanoff\"; </script>";
 		}
 ?>

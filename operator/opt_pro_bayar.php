@@ -17,16 +17,16 @@ if($bayar<$jumlah_bayar){ //jika bayar kurang dari jumlah harga yang seharusnya 
 			}
 if($bayar>$jumlah_bayar){ //jika jumlah bayar melebihi dari jumlah yang seharusnya dibayarkan
 	//alert muncul dibawah ini
-	echo "<script> alert(\"Jumlah yang dibayarkan terlalu besar\"); window.location = \"opt_profil.php?url=bayaroff\"; </script>";
+	echo "<script> alert(\"Jumlah yang dibayarkan terlalu besar\"); window.location = \"adm_profil.php?url=bayaroff\"; </script>";
 	}else{ //jika tidak
 	//maka akan update data di tabel transaksi dan menyimpan tabel di bayar_cod
 	$simpan = mysqli_query($koneksi,"update transaksi set status='$status' where id_book='$id_book'");
 	$simpan2 = mysqli_query($koneksi,"insert into bayar_cod values('$id_book','$jumlah_bayar','$bayar','$status')");
 	if($simpan && $simpan2){ //jika dapat menyimpan 
 		if($t['jenis_bayar']!='off cod'){ // jika jenis bayar tidak sama dengan off cod
-			echo "<script> alert(\"Berhasil.!!!\"); window.location = \"opt_profil.php?url=bayaroff\"; </script>";
+			echo "<script> alert(\"Berhasil.!!!\"); window.location = \"adm_profil.php?url=bayaroff\"; </script>";
 			}else{ //jika tidak 
-			echo "<script> alert(\"Berhasil.!!!\"); window.location = \"opt_profil.php?url=pesanbayaroff\"; </script>";
+			echo "<script> alert(\"Berhasil.!!!\"); window.location = \"adm_profil.php?url=pesanbayaroff\"; </script>";
 				}
 		}
 	}
@@ -37,15 +37,15 @@ if(($m['bayar']+$bayar) == $jumlah_bayar){
 	$status = 'Belum Lunas';		
 			}
 if(($m['bayar']+$bayar) > $jumlah_bayar){
-	echo "<script> alert(\"Jumlah yang dibayarkan terlalu besar\"); window.location = \"opt_profil.php?url=bayaroff\"; </script>";
+	echo "<script> alert(\"Jumlah yang dibayarkan terlalu besar\"); window.location = \"adm_profil.php?url=bayaroff\"; </script>";
 	}else{
 	$simpan = mysqli_query($koneksi,"update transaksi set status='$status' where id_book='$id_book'");
 	$simpan2 = mysqli_query($koneksi,"update bayar_cod set status='$status', bayar=$m[bayar]+$bayar where id_book='$id_book'");
 	if($simpan && $simpan2){
 		if($t['jenis_bayar']!='off cod'){
-			echo "<script> alert(\"Berhasil.!!!\"); window.location = \"opt_profil.php?url=bayaroff\"; </script>";
+			echo "<script> alert(\"Berhasil.!!!\"); window.location = \"adm_profil.php?url=bayaroff\"; </script>";
 			}else{
-			echo "<script> alert(\"Berhasil.!!!\"); window.location = \"opt_profil.php?url=pesanbayaroff\"; </script>";
+			echo "<script> alert(\"Berhasil.!!!\"); window.location = \"adm_profil.php?url=pesanbayaroff\"; </script>";
 				}
 		}
 	}

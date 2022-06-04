@@ -8,6 +8,6 @@ $data = mysqli_query($koneksi, "select * from lapangan where id_lap = '$_GET[id_
 	mysqli_query($koneksi,"delete from lapangan where id_lap = '$_GET[id_lap]'") or die (mysqli_error()); 
 	//menghapus data pada database
 	echo "<script language='javascript'>
-                    window.location='opt_profil.php';
+                    window.location='adm_profil.php';
                     </script>";
 ?>

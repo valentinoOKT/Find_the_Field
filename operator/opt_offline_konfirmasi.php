@@ -58,7 +58,7 @@
 		  $up = mysqli_query($koneksi,"update transaksi set status='Selesai' where id_book = '$idb'");
 		  $up2 = mysqli_query($koneksi, "update bayar_cod set status='Selesai' where id_book='$idb'");
 		  if($up && $up2){
-			  echo "<script> alert(\"Berhasil..!!\");  window.location = \"opt_profil.php?url=mPesanOff\"; </script>";
+			  echo "<script> alert(\"Berhasil..!!\");  window.location = \"adm_profil.php?url=mPesanOff\"; </script>";
 			  }
 		  }
 	  ?>

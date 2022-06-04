@@ -61,7 +61,7 @@
 		  $up2 = mysqli_query($koneksi, "update bayar_transfer set status='Selesai' where id_book='$ib'");
 		  
 		  if($up && $up2){ //jika berhasil di perbarui maka akan menjalankan code bagian ini
-			  echo "<script> alert(\"Berhasil..!!\");  window.location = \"opt_profil.php?url=konfirmasi\"; </script>";
+			  echo "<script> alert(\"Berhasil..!!\");  window.location = \"adm_profil.php?url=konfirmasi\"; </script>";
 			  }
 		  }
 	  ?>
