@@ -139,20 +139,20 @@ INSERT INTO `member` (`username_member`, `nama`, `password`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `operator`
+-- Struktur dari tabel `admin`
 --
 
-CREATE TABLE `operator` (
+CREATE TABLE `admin` (
   `username` varchar(50) NOT NULL,
-  `nama_opt` varchar(100) NOT NULL,
+  `nama_adm` varchar(100) NOT NULL,
   `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `operator`
+-- Dumping data untuk tabel `admin`
 --
 
-INSERT INTO `operator` (`username`, `nama_opt`, `password`) VALUES
+INSERT INTO `admin` (`username`, `nama_adm`, `password`) VALUES
 ('admin', 'Admin', '11');
 
 -- --------------------------------------------------------
@@ -208,9 +208,9 @@ ALTER TABLE `member`
   ADD PRIMARY KEY (`username_member`);
 
 --
--- Indeks untuk tabel `operator`
+-- Indeks untuk tabel `admin`
 --
-ALTER TABLE `operator`
+ALTER TABLE `admin`
   ADD PRIMARY KEY (`username`);
 
 --

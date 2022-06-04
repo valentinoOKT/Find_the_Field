@@ -77,88 +77,6 @@ mysqli_query($koneksi, "update transaksi set status='Selesai' where ((tgl_main <
      ?>
 
 <div >
-     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-         <!-- Indicators -->
-         <ol class="carousel-indicators">
-           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-           <li data-target="#myCarousel" data-slide-to="1"></li>
-           <li data-target="#myCarousel" data-slide-to="2"></li>
-           <li data-target="#myCarousel" data-slide-to="3"></li>
-           <li data-target="#myCarousel" data-slide-to="4"></li>
-           <li data-target="#myCarousel" data-slide-to="5"></li>
-            <li data-target="#myCarousel" data-slide-to="6"></li>
-           
-		   
-         </ol>
-
-         <!-- Wrapper for slides -->
-         <div class="carousel-inner" role="listbox">
-           <div class="item active">
-             <img src="assets/futsal/1.jpg" alt="Image">
-             <div class="carousel-caption">
-               <!--<h3>Pesan Lapangan</h3>
-               <p>Sekarang</p>-->
-             </div>
-           </div>
-
-           <div class="item">
-             <img src="assets/futsal/2.jpg" alt="Image">
-             <div class="carousel-caption">
-               
-             </div>
-           </div>
-         
-         
-         <div class="item">
-             <img src="assets/futsal/3.jpg" alt="Image">
-             <div class="carousel-caption">
-               
-             </div>
-           </div>
-         
-         
-         <div class="item">
-             <img src="assets/futsal/4.jpg" alt="Image">
-             <div class="carousel-caption">
-               
-             </div>
-           </div>
-         
-         
-         <div class="item">
-             <img src="assets/futsal/5.jpg" alt="Image">
-             <div class="carousel-caption">
-              
-             </div>
-           </div>
-           
-           <div class="item">
-             <img src="assets/futsal/6.jpg" alt="Image">
-             <div class="carousel-caption">
-              
-             </div>
-           </div>
-           
-           <div class="item">
-             <img src="assets/futsal/7.jpg" alt="Image">
-             <div class="carousel-caption">
-               
-             </div>
-           </div>
-           
-         </div>
-        
-         <!-- Left and right controls -->
-         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-           <span class="sr-only">Previous</span>
-         </a>
-         <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-           <span class="sr-only">Next</span>
-         </a>
-     </div>
-</div>
         <!-- Page Container -->
     <div class="container w3-content" style="max-width:1400px;margin-top:20px">
       <!-- The Grid -->
@@ -192,7 +110,7 @@ mysqli_query($koneksi, "update transaksi set status='Selesai' where ((tgl_main <
     
       
         
-    <div class="w3-container w3-card-2 w3-white w3-round" style="margin-left: 10px; margin-top:10px;"><br>
+    <div class="w3-container w3-card-2 w3-round" style="margin-left: 250px; margin-top:10px; background-color:#076921 "><br>
          
               <div class="w3-row-padding" style="margin:0 -16px">
                 <div class="w3-half">
@@ -200,18 +118,17 @@ mysqli_query($koneksi, "update transaksi set status='Selesai' where ((tgl_main <
                 </div>
                 <form action="transaksi.php" method="post">
                 <input type="hidden" name="id_lap" value="<?php echo $r['id_lap']; ?>">
-                <div class="w3-half">
+                <div class="w3-half" style="color:white;">
                   <i class="fa fa-list-alt" aria-hidden="true"></i> Lapangan Nomor&nbsp;<?php echo $r['no_lap']; ?><br><br>
                   <i class="fa fa-life-ring" aria-hidden="true"></i> Lapangan <?php echo $r['jenis_rumput']; ?><br><br>
                   <i class="fa fa-tags" aria-hidden="true"></i> Rp. <?php echo $r['harga']; ?> per jam<br><br><br><br>
                   
-              </div>
-              <div class="w3-right">
-
-            <button type="submit" class="w3-btn w3-teal w3-margin-bottom"><i class="glyphicon glyphicon-book"></i>  Pesan</button>
-            </form>
-            </div>
-            </div>
+                </div>
+                <div class="w3-right">
+                  <button type="submit" class="w3-margin-bottom"><i class="glyphicon glyphicon-book" ></i>  Pesan</button>
+                </form>
+                </div>
+                </div>
             
             
           </div>

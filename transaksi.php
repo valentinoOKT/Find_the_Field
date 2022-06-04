@@ -280,20 +280,20 @@ if($simpan & $jenis_bayar=='transfer'){ //jika simpan data berhasil dan jenis ba
         </div>
 
     <!-- jQuery -->
-    <script src="admin/assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="operator/assets/vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="admin/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="operator/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- FastClick -->
-    <script src="admin/assets/vendors/fastclick/lib/fastclick.js"></script>
+    <script src="operator/assets/vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
-    <script src="admin/assets/vendors/nprogress/nprogress.js"></script>
+    <script src="operator/assets/vendors/nprogress/nprogress.js"></script>
   <!-- jQuery Smart Wizard -->
-    <script src="admin/assets/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+    <script src="operator/assets/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
     <!-- Custom Theme Scripts -->
-    <script src="admin/assets/build/js/custom.min.js"></script>
+    <script src="operator/assets/build/js/custom.min.js"></script>
     <!-- bootstrap-daterangepicker -->
     <script src="assets/min/moment.min.js"></script>
-    <script src="admin/assets/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="operator/assets/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 
 		<script src="assets/js/moment.js"></script>
 		<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
