@@ -23,7 +23,7 @@ $sisa = $sql_res['total_harga'];
       </div>
       <div class="modal-body">
         
-        <form class="form-horizontal" name="modal_popup" action="opt_pro_bayar.php" method="post" enctype="multipart/form-data">
+        <form class="form-horizontal" name="modal_popup" action="adm_pro_bayar.php" method="post" enctype="multipart/form-data">
           <div class="form-group">
             <label class="control-label col-sm-4" for="email">Kode Booking</label>
             <div class="col-sm-8">

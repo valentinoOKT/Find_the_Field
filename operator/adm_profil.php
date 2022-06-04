@@ -371,7 +371,7 @@ if($_GET['lap']=="delete"){
       </div>
        <?php
 	   		}elseif($_GET['url']=="bayaroff"){
-				include "opt_bayar_offline.php";
+				include "adm_bayar_offline.php";
       ?>
       <?php
 	   		}elseif($_GET['url']=="pesanbayaroff"){
@@ -379,17 +379,17 @@ if($_GET['lap']=="delete"){
       ?>
       <?php
 	   		}elseif($_GET['url']=="mPesanOff"){
-				include "opt_offline_konfirmasi.php";
+				include "adm_offline_konfirmasi.php";
       ?>
       
       <?php
 	   		}elseif($_GET['url']=="mBayOff"){
-				include "opt_bayaroff_konfirmasi.php";
+				include "adm_bayaroff_konfirmasi.php";
       ?>
       
       <?php
       		}elseif($_GET['url']=="konfirmasi"){
-      		include "opt_online_konfirmasi.php";
+      		include "adm_online_konfirmasi.php";
 	  ?>
       
       
@@ -694,7 +694,7 @@ function openNav() {
    $(".open_bayar").click(function(e) {
       var m = $(this).attr("id");
 		   $.ajax({
-    			   url: "opt_bayar_off.php",
+    			   url: "adm_bayar_off.php",
     			   type: "GET",
     			   data : {id_book: m,},
     			   success: function (ajaxData){
