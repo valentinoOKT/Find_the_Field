@@ -27,6 +27,7 @@ section,
 summary {
   display: block;
 }
+
 audio,
 canvas,
 progress,
@@ -4697,6 +4698,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background-color: #f5f5f5;
   border-radius: 4px;
 }
+.nav > .w3-center {
+ padding-right: 200px;
+}
 .breadcrumb > li {
   display: inline-block;
 }
@@ -4721,7 +4725,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span {
   position: relative;
   float: left;
-  padding: 6px 12px;
+  padding: 6px 50px;
   margin-left: -1px;
   line-height: 1.42857143;
   color: #337ab7;

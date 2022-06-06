@@ -16,7 +16,7 @@
     <style>
   	body { 
 			padding-top: 50px;
-			background-color:#CCC;	
+			background-color:white;	
 	 }
     .modal-title {
       color: #424e5e;

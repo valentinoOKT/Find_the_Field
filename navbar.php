@@ -20,7 +20,8 @@ if(isset($_SESSION['admin'])){
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php" style="color:white">Find The Field</a>
+            <img src="assets/Logo.png" alt="" width="50" height="50" style="float:left; padding: 3px;" >
+            <a class="navbar-brand" href="index.php" style="color: white; padding-left: 20px">Find the Field</a>
           </div>
 
 
@@ -71,7 +72,8 @@ if(isset($_SESSION['admin'])){
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php" style="color:white">Find the Field</a>
+            <img src="assets/Logo.png" alt="" width="50" height="50" style="float:left; padding: 3px;" >
+            <a class="navbar-brand" href="index.php" style="color: white; padding-left: 20px">Find the Field</a>
           </div>
 
 
@@ -111,7 +113,8 @@ if(isset($_SESSION['admin'])){
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php" style="color:white">Find the Field</a>
+            <img src="assets/Logo.png" alt="" width="50" height="50" style="float:left; padding: 3px;" >
+            <a class="navbar-brand" href="index.php" style="color: white; padding-left: 20px">Find the Field</a>
           </div>
 
 
