@@ -2,9 +2,9 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-if(isset($_SESSION['operator'])){
-	$username = $_SESSION['operator'];
-	$sql = "select * from operator where username = '$username'";
+if(isset($_SESSION['admin'])){
+	$username = $_SESSION['admin'];
+	$sql = "select * from admin where username = '$username'";
 	$query_sel = mysqli_query($kon,$sql);
 	$sql_sel = mysqli_fetch_array($query_sel);
 }
@@ -47,7 +47,6 @@ if(isset($_SESSION['operator'])){
 
 			<label>Nama</label><br>
 			<input type="text" name="username" id="username"  disabled/><br>
-            <input type="hidden" name="username" id="username"  value="yunita" disabled/><br>
 
 			<label>ID Lap</label><br>
 			<textarea name="id_lap" id="id_lap" disabled></textarea><br>

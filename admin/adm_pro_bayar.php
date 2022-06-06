@@ -1,6 +1,6 @@
 <?php
 include "../koneksi.php";
-//ketika operator menekan tombol bayar maka akan menjalankan code file ini
+//ketika admin menekan tombol bayar maka akan menjalankan code file ini
 //variabel yang berisi data yang telah diinputkan di form pembayaran
 $id_book = $_POST['id_book'];
 $jumlah_bayar = $_POST['jumlah_harga'];

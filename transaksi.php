@@ -71,7 +71,7 @@ if(isset($_SESSION['member'])){
 						?>
                         <?php 
 						$id_lap = $_REQUEST['id_lap'];
-						$sel = mysqli_query($koneksi, "select lapangan.*, operator.alamat_futsal, operator.kota, operator.nama_futsal from lapangan inner join operator on (lapangan.username=operator.username) where id_lap = '$id_lap'");
+						$sel = mysqli_query($koneksi, "select lapangan.*, admin.alamat_futsal, admin.kota, admin.nama_futsal from lapangan inner join admin on (lapangan.username=admin.username) where id_lap = '$id_lap'");
 						$pilih = mysqli_fetch_array($sel);
 						//memanggil data dari database yang memiliki id_lap sesuai yang dipilih oleh member
 						?>
@@ -261,7 +261,7 @@ if(isset($_SESSION['member'])){
 if($simpan & $jenis_bayar=='transfer'){ //jika simpan data berhasil dan jenis bayar = transfer 
 	echo "<script> alert(\"Silakan Lakukan Pembayaran\"); window.location = \"trans_upload_bayar.php?kd=$id_book\"; </script>";
 	} elseif($jenis_bayar=='cod') { // dan jika jenis bayar cod
-	echo "<script> alert(\"Segera Lakukan Pembayaran Kepada Operator Futsal Yang Dituju\"); window.location = \"index.php\"; </script>";
+	echo "<script> alert(\"Segera Lakukan Pembayaran Kepada admin Futsal Yang Dituju\"); window.location = \"index.php\"; </script>";
 		} else { //dan jika tidak
 		echo "<script> alert(\"Maaf, Terjadi Kesalahan...\"); window.location = \"index.php\"; </script>";		
 			}
@@ -280,20 +280,20 @@ if($simpan & $jenis_bayar=='transfer'){ //jika simpan data berhasil dan jenis ba
         </div>
 
     <!-- jQuery -->
-    <script src="operator/assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="admin/assets/vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="operator/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="admin/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- FastClick -->
-    <script src="operator/assets/vendors/fastclick/lib/fastclick.js"></script>
+    <script src="admin/assets/vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
-    <script src="operator/assets/vendors/nprogress/nprogress.js"></script>
+    <script src="admin/assets/vendors/nprogress/nprogress.js"></script>
   <!-- jQuery Smart Wizard -->
-    <script src="operator/assets/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+    <script src="admin/assets/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
     <!-- Custom Theme Scripts -->
-    <script src="operator/assets/build/js/custom.min.js"></script>
+    <script src="admin/assets/build/js/custom.min.js"></script>
     <!-- bootstrap-daterangepicker -->
     <script src="assets/min/moment.min.js"></script>
-    <script src="operator/assets/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="admin/assets/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 
 		<script src="assets/js/moment.js"></script>
 		<script src="assets/js/bootstrap-datetimepicker.min.js"></script>

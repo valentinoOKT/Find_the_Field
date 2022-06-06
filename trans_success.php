@@ -73,8 +73,8 @@ if(isset($_SESSION['member'])){
 						  $e = $s['jam_berakhir']-$s['jam_mulai'];
 						  //select lapangan
 						  $q = mysqli_fetch_array(mysqli_query($koneksi, "select * from lapangan where id_lap='$s[id_lap]'"));
-						  //select operator
-						  $w = mysqli_fetch_array(mysqli_query($koneksi, "select * from operator where username='$q[username]'"));
+						  //select admin
+						  $w = mysqli_fetch_array(mysqli_query($koneksi, "select * from admin where username='$q[username]'"));
 						   ?>
                           <div class="form-group">
                             <label class="control-label col-md-4 col-sm-4 col-xs-12" for="first-name"><span class="required"></span>
@@ -125,7 +125,7 @@ if(isset($_SESSION['member'])){
                             <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name"><span class="required"></span>
                             </label>
                             <div class="col-md-7 col-sm-7 col-xs-12">
-                              <h3 align="center">Selamat bermain dengan menunjukkan halaman ini atau dengan menunjukkan bukti email yang telah dikirim ke email Anda kepada Operator tempat futsal</h3>
+                              <h3 align="center">Selamat bermain dengan menunjukkan halaman ini atau dengan menunjukkan bukti email yang telah dikirim ke email Anda kepada admin tempat futsal</h3>
                             </div>
                           </div>
                           

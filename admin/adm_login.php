@@ -38,7 +38,7 @@
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 		
-		$sql = "select * from operator where username = '$username' ";
+		$sql = "select * from admin where username = '$username' ";
 		$query = mysqli_query($koneksi,$sql);
 		//cek ada berapakah data yang memiliki username dan email yang diinputkan oleh user
 		$cek = mysqli_num_rows($query);
@@ -51,8 +51,8 @@
 				if($_POST['username'] == $cekuser){//cek apakah username atau email sama dengan yang ada di database
 					if($_POST['password'] == $cekpass){// cek apakah password sama dengan yang ada di database
 						session_start(); // untuk memulai session
-						$_SESSION['operator']=$cekuser; //menamai session dengan nama username
-							echo "<script> window.location = \"../operator/adm_profil.php\"; </script>";
+						$_SESSION['admin']=$cekuser; //menamai session dengan nama username
+							echo "<script> window.location = \"../admin/adm_profil.php\"; </script>";
 						} else {
 							echo "<script> alert(\"Password Salah\"); window.location = \"../index.php\"; </script>";
 						}

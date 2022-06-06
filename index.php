@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Find the Field</title>
-  <link rel="shortcut icon" href="assets/images/Goputsalgaji.png">
+  <link rel="shortcut icon" href="assets/Logo.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -64,7 +64,7 @@ if($cek > 0){
 mysqli_query($koneksi, "update transaksi set status='Dibatalkan' where batas_bayar <= '$tanggaljam' && jenis_bayar = 'transfer' && (status!='Telah Dikonfirmasi' && status!='Selesai')");
 //Dibatalkan jika bayar cod , statusnya masih belum transfer dan telah melewati batas bayar
 mysqli_query($koneksi, "update transaksi set status='Dibatalkan' where batas_bayar <= '$tanggaljam' && jenis_bayar = 'cod' && (status='Menunggu Pembayaran')");
-//Dibatalkan jika bayar off cod(pesan secara langsung ke operator) , statusnya masih belum transfer dan telah melewati batas bayar
+//Dibatalkan jika bayar off cod(pesan secara langsung ke admin) , statusnya masih belum transfer dan telah melewati batas bayar
 mysqli_query($koneksi, "update transaksi set status='Dibatalkan' where batas_bayar <= '$tanggaljam' && jenis_bayar = 'off cod' && (status='Belum Bayar')");
 //Selesai jika jam berakhir telah melewati waktu sekarang
 mysqli_query($koneksi, "update transaksi set status='Selesai' where ((tgl_main <='$tanggal' && jam_berakhir <='$jam') || (tgl_main <='$tanggal' && jam_berakhir >='$jam')) && (status!='Dibatalkan' && status!='Selesai')");
@@ -102,7 +102,7 @@ mysqli_query($koneksi, "update transaksi set status='Selesai' where ((tgl_main <
     $posisi = ( $pg - 1 ) * $batas;
     }
 
-    $sql = mysqli_query($koneksi,"select lapangan.* from lapangan inner join operator on (lapangan.username=operator.username) limit $posisi, $batas");
+    $sql = mysqli_query($koneksi,"select lapangan.* from lapangan inner join admin on (lapangan.username=admin.username) limit $posisi, $batas");
     $no = 1+$posisi;
     while ( $r = mysqli_fetch_array( $sql ) ) {
     ?>
@@ -114,7 +114,7 @@ mysqli_query($koneksi, "update transaksi set status='Selesai' where ((tgl_main <
          
               <div class="w3-row-padding" style="margin:0 -16px">
                 <div class="w3-half">
-                  <img src="operator/assets/foto_lap/<?php echo $r['foto']; ?>" style="width:100%; min-height:100%;" alt="Northern Lights" class="w3-margin-bottom">
+                  <img src="admin/assets/foto_lap/<?php echo $r['foto']; ?>" style="width:100%; min-height:100%;" alt="Northern Lights" class="w3-margin-bottom">
                 </div>
                 <form action="transaksi.php" method="post">
                 <input type="hidden" name="id_lap" value="<?php echo $r['id_lap']; ?>">

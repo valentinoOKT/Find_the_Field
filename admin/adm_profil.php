@@ -3,9 +3,9 @@ require ("../koneksi.php");
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-if(isset($_SESSION['operator'])){
-	$username = $_SESSION['operator'];
-	$sql = "select * from operator where username = '$username'";
+if(isset($_SESSION['admin'])){
+	$username = $_SESSION['admin'];
+	$sql = "select * from admin where username = '$username'";
 	$query_sel = mysqli_query($koneksi,$sql);
 	$sql_sel = mysqli_fetch_array($query_sel);
 	?>
@@ -13,7 +13,7 @@ if(isset($_SESSION['operator'])){
 <html lang="en">
 <head>
   <title>Halaman Admin</title>
-  <link rel="shortcut icon" href="../assets/images/Goputsalgaji.png">
+  <link rel="shortcut icon" href="../assets/images/icon.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -144,7 +144,7 @@ if($_GET['lap']=="delete"){
 	  ?>
       
       <div class="w3-container w3-card-2 w3-white w3-round" style="margin-left: 10px"><br>
-        <h4>Pesan Offline (By Operator)</h4>
+        <h4>Pesan Offline (By admin)</h4>
         <hr class="w3-clear">
         
           <div class="w3-row-padding" style="margin:0 -16px">

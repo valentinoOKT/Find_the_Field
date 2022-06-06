@@ -54,7 +54,7 @@
                 ?>
                 <?php 
 	  if(isset($_POST['main'])){
-		  //jika tombol main ditekan oleh operator maka akan mengeksekusi code bagian ini
+		  //jika tombol main ditekan oleh admin maka akan mengeksekusi code bagian ini
 		  $ib = $_POST['id_book'];
 		  //akan memperbarui tabel transaksi dan tabel bayar_transfer yang memiliki id_book yg sama
 		  $up = mysqli_query($koneksi,"update transaksi set status='Selesai' where id_book = '$ib'");

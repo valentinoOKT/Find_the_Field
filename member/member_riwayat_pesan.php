@@ -32,7 +32,7 @@
                                                  <td><?php echo $sql_res['jam_mulai']; ?></td>
                                                  <td><?php echo $sql_res['jam_berakhir']; ?></td>
                                                  <td><?php 
-												 $s = mysqli_query($koneksi,"select lapangan.*, operator.* from lapangan inner join operator on lapangan.username=operator.username where id_lap='$sql_res[id_lap]'");
+												 $s = mysqli_query($koneksi,"select lapangan.*, admin.* from lapangan inner join admin on lapangan.username=admin.username where id_lap='$sql_res[id_lap]'");
 												 $p = mysqli_fetch_array($s);
 												 echo "$p[id_lap] ($p[no_lap])"; ?></td>
                                                  <td><?php echo $sql_res['total_harga']; ?></td>

@@ -38,7 +38,7 @@
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 		
-		$sql = "select * from operator where username = '$username' ";
+		$sql = "select * from admin where username = '$username' ";
 		$query = mysqli_query($koneksi,$sql);
 		
 		$cek = mysqli_num_rows($query);
@@ -51,8 +51,8 @@
 				if($username == $cekuser){
 					if($_POST['password'] == $cekpass){
 						session_start();
-						$_SESSION['operator']=$cekuser;
-							echo "<script> window.location = \"operator/adm_profil.php\"; </script>";
+						$_SESSION['admin']=$cekuser;
+							echo "<script> window.location = \"admin/adm_profil.php\"; </script>";
 						} else {
 							echo "<script> alert(\"Password Salah\"); window.location = \"index.php\"; </script>";
 						}

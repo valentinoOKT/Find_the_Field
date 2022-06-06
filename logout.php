@@ -1,7 +1,7 @@
 <?php
 session_start();
-if(isset($_SESSION['operator'])){
-	unset($_SESSION['operator']);
+if(isset($_SESSION['admin'])){
+	unset($_SESSION['admin']);
 	}
 elseif(isset($_SESSION['member'])){
 	unset($_SESSION['member']);

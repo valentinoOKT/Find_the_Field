@@ -3,9 +3,9 @@ include ("koneksi.php");
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-if(isset($_SESSION['operator'])){
-	$username = $_SESSION['operator'];
-	$sql = "select * from operator where username = '$username'";
+if(isset($_SESSION['admin'])){
+	$username = $_SESSION['admin'];
+	$sql = "select * from admin where username = '$username'";
 	$query_sel = mysqli_query($koneksi,$sql);
 	$sql_sel = mysqli_fetch_array($query_sel);
 	?>
@@ -36,16 +36,16 @@ if(isset($_SESSION['operator'])){
 
             <ul class="nav navbar-nav">
               <li class="w3-hide-small"><a href="index.php" class="w3-padding-large w3-hover-white" title="Home"><i class="fa fa-home"></i></a></li>
-  <li class="w3-hide-small"><a href="operator/adm_profil.php" class="w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a></li>
+  <li class="w3-hide-small"><a href="admin/adm_profil.php" class="w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a></li>
   
   
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
               <li class="w3-hide-small w3-dropdown-hover">
-              &nbsp;&nbsp;Hi, <?php echo $sql_sel['nama_opt']; ?> &nbsp;<i class="fa fa-caret-down"></i></a>
+              &nbsp;&nbsp;Hi, <?php echo $sql_sel['nama_adm']; ?> &nbsp;<i class="fa fa-caret-down"></i></a>
                 <div class="w3-dropdown-content w3-white w3-card-4">
-                  <a href="operator/adm_profil.php"><i class="fa fa-user"></i>&nbsp;Accounts</a>
+                  <a href="admin/adm_profil.php"><i class="fa fa-user"></i>&nbsp;Accounts</a>
                   <!--<a href="#"><i class="fa fa-cog"></i>&nbsp;Settings</a>-->
                   <a href="logout.php"><i class="fa fa-sign-out"></i>&nbsp;Logout</a>
                 </div>

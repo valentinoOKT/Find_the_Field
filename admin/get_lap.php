@@ -4,9 +4,9 @@ require 'koneksi.php';
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-if(isset($_SESSION['operator'])){
-	$username = $_SESSION['operator'];
-	$sql = "select * from operator where username = '$username'";
+if(isset($_SESSION['admin'])){
+	$username = $_SESSION['admin'];
+	$sql = "select * from admin where username = '$username'";
 	$query_sel = mysqli_query($koneksi,$sql);
 	$sql_sel = mysqli_fetch_array($query_sel);
 }

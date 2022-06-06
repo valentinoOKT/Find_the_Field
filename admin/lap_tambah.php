@@ -82,12 +82,12 @@
 			if (session_status() == PHP_SESSION_NONE) {
 				session_start();
 			}
-			if(isset($_SESSION['operator'])){
-				$username = $_SESSION['operator'];
+			if(isset($_SESSION['admin'])){
+				$username = $_SESSION['admin'];
 			}
 			if(isset($_POST['simpan'])){
 				//jika tombol simpan ditekan akan menjalankan code bagian ini
-				//variabel dengan nilai apa yang telah di inputkan oleh operator
+				//variabel dengan nilai apa yang telah di inputkan oleh admin
 			$id_lap = $_POST['id_lap'];
 			$jenis_rumput = $_POST['jenis_rumput'];
 			$harga = $_POST['harga'];
