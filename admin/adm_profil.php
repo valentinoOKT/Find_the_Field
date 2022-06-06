@@ -618,7 +618,7 @@ function openNav() {
 				
 
 				$.ajax({
-					url: 'getSiswa.php',
+					url: 'get_adm.php',
 					type: 'POST',
 					dataType: 'json',
 					data: {

@@ -20,7 +20,7 @@ if(isset($_SESSION['admin'])){
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../index.php" style="color: white;">Find The Field</a>
+            <a class="navbar-brand" style="color: white;">Find The Field</a>
           </div>
 
 
@@ -54,14 +54,14 @@ if(isset($_SESSION['admin'])){
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../index.php">Find the Field</a>
+            <a class="navbar-brand" href="#">Find the Field</a>
           </div>
 
 
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <form class="navbar-form navbar-left" action="../cari_filter.php" method="post">
+            <form class="navbar-form navbar-left" action="../fitur_cari.php" method="post">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Search" name="mencari">
               </div>
@@ -71,10 +71,8 @@ if(isset($_SESSION['admin'])){
             
 
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="opt_daftar.php">Daftar</a></li>
-              
               <form class="navbar-form navbar-right">
-                &nbsp;&nbsp;&nbsp;&nbsp;Atau Masuk sebagai &nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;Masuk sebagai &nbsp;
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Member</button>
                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Modal2">admin</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

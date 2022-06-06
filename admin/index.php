@@ -74,7 +74,7 @@ if(isset($_SESSION['admin'])){
 				
 
 				$.ajax({
-					url: 'getSiswa.php',
+					url: 'get_adm.php',
 					type: 'POST',
 					dataType: 'json',
 					data: {

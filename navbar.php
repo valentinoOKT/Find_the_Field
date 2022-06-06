@@ -10,7 +10,7 @@ if(isset($_SESSION['admin'])){
 	$sql_sel = mysqli_fetch_array($query_sel);
 	?>
     
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#0a942f;">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -20,14 +20,14 @@ if(isset($_SESSION['admin'])){
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">Find The Field</a>
+            <a class="navbar-brand" href="index.php" style="color:white">Find The Field</a>
           </div>
 
 
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <form class="navbar-form navbar-left" method="post" action="cari_filter.php">
+            <form class="navbar-form navbar-left" method="post" action="fitur_cari.php">
               <div class="form-group">
                 <input type="text" name="mencari" class="form-control" placeholder="Search">
               </div>
@@ -71,13 +71,20 @@ if(isset($_SESSION['admin'])){
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php" style="color: white">Find the Field</a>
+            <a class="navbar-brand" href="index.php" style="color:white">Find the Field</a>
           </div>
 
 
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <form class="navbar-form navbar-left" method="post" action="fitur_cari.php">
+              <div class="form-group">
+                <input type="text" name="mencari" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" name="cari" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+            </form>
+
             <ul class="nav navbar-nav navbar-right">
               <li class="w3-hide-small w3-dropdown-hover">
               <a href="#" class="w3-padding-large w3-hover-white" style="color: white">&nbsp;&nbsp;Hi, <?php echo $sql_sel['nama']; ?> &nbsp;<i class="fa fa-caret-down"></i></a>
@@ -94,7 +101,7 @@ if(isset($_SESSION['admin'])){
     <?php
 	} else {
 		?>
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#0a942f;">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -104,12 +111,20 @@ if(isset($_SESSION['admin'])){
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+            <a class="navbar-brand" href="index.php" style="color:white">Find the Field</a>
           </div>
 
 
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color:#0a942f;">
+            <form class="navbar-form navbar-left" action="fitur_cari.php" method="post">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" name="mencari">
+              </div>
+              <button type="submit" name="cari" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+            </form>
+
             <ul class="nav navbar-nav navbar-right">
               <form class="navbar-form navbar-right" style="color:white;">
                 &nbsp;&nbsp;&nbsp;&nbsp;Masuk sebagai &nbsp;

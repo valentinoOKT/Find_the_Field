@@ -30,19 +30,6 @@
       background-color: #f2f2f2;
       padding: 25px;
     }
-
-  .carousel-inner img {
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-      min-height:200px;
-  }
-
-  /* Hide the carousel text when the screen is less than 600 pixels wide */
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none;
-    }
-  }
   </style>
 </head>
 <body>
@@ -77,7 +64,6 @@ mysqli_query($koneksi, "update transaksi set status='Selesai' where ((tgl_main <
      ?>
 
 <div >
-        <!-- Page Container -->
     <div class="container w3-content" style="max-width:1400px;margin-top:20px">
       <!-- The Grid -->
       <div class="w3-row">
@@ -110,11 +96,11 @@ mysqli_query($koneksi, "update transaksi set status='Selesai' where ((tgl_main <
     
       
         
-    <div class="w3-container w3-card-2 w3-round" style="margin-left: 250px; margin-top:10px; background-color:#076921 "><br>
+    <div class="w3-container w3-card-2 w3-round" style="margin-left: 250px; margin-top:10px; background-color:#076921"><br>
          
               <div class="w3-row-padding" style="margin:0 -16px">
                 <div class="w3-half">
-                  <img src="admin/assets/foto_lap/<?php echo $r['foto']; ?>" style="width:100%; min-height:100%;" alt="Northern Lights" class="w3-margin-bottom">
+                  <img src="admin/assets/foto_lap/<?php echo $r['foto']; ?>" style="width:100%; min-height:100%;" alt="Gambar Lapangan" class="w3-margin-bottom">
                 </div>
                 <form action="transaksi.php" method="post">
                 <input type="hidden" name="id_lap" value="<?php echo $r['id_lap']; ?>">
@@ -204,8 +190,6 @@ mysqli_query($koneksi, "update transaksi set status='Selesai' where ((tgl_main <
     
       <!-- End Grid -->
       </div>
-    
-    <!-- End Page Container -->
     </div>
     <br>
     

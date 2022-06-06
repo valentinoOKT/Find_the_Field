@@ -1,5 +1,5 @@
 <div class="w3-container w3-card-2 w3-white w3-round" style="margin-left: 10px"><br>
-        <h4>Riwayat Pemesanan</h4>
+        <h4>Booking Schedule</h4>
         <hr class="w3-clear">
           <div class="w3-row-padding" style="margin:0 -16px">
             <div class="panel-heading">
