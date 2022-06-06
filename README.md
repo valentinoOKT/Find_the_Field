@@ -7,4 +7,4 @@ Cara menjalankan website:
 1. Buka XAMPP, lalu nyalakan Apache dan MySQL.
 2. Buka situs http://localhost/phpmyadmin/ untuk memasukkan databasenya dengan cara membuat database baru dan sesuaikan nama database dengan database dengan ada pada proyek ini.
 3. Impor database yang ada pada proyek ini.
-4. Buka situs http://localhost/FInd_the_Field/ agar dapat membuka websitenya. 
+4. Buka situs http://localhost/Find_the_Field/ agar dapat membuka websitenya. 
