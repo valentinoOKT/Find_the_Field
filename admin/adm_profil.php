@@ -372,16 +372,7 @@ if($_GET['lap']=="delete"){
        <?php
 	   		}elseif($_GET['url']=="bayaroff"){
 				include "adm_bayar_offline.php";
-      ?>
-      <?php
-	   		}elseif($_GET['url']=="pesanbayaroff"){
-				include "opt_bayar_pesanoffline.php";
-      ?>
-      <?php
-	   		}elseif($_GET['url']=="mPesanOff"){
-				include "adm_offline_konfirmasi.php";
-      ?>
-      
+      ?>    
       <?php
 	   		}elseif($_GET['url']=="mBayOff"){
 				include "adm_bayaroff_konfirmasi.php";

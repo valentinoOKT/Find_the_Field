@@ -4,7 +4,7 @@ include "koneksi.php";
 $id_book = $_POST['id_book'];
 $rek_kirim = $_POST['rek_kirim'];
 $rek_tuju = $_POST['rek_tuju'];
-$status = "Menunggu Konfirmasi admin";
+$status = "Selesai";
 $foto = $_FILES['foto_bukti']['name'];
 $lokasi= $_FILES['foto_bukti']['tmp_name'];
 //simpan foto ke folder

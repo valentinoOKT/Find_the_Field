@@ -48,7 +48,7 @@ if(isset($_SESSION['member'])){
   <?php
   include "navbar.php";
     include "member_login.php";
-    include "opt_login.php";
+    include "adm_login.php";
      ?>
         <!-- page content -->
         <div class="container">
@@ -71,7 +71,7 @@ if(isset($_SESSION['member'])){
 						?>
                         <?php 
 						$id_lap = $_REQUEST['id_lap'];
-						$sel = mysqli_query($koneksi, "select lapangan.*, admin.alamat_futsal, admin.kota, admin.nama_futsal from lapangan inner join admin on (lapangan.username=admin.username) where id_lap = '$id_lap'");
+						$sel = mysqli_query($koneksi, "select lapangan.* from lapangan inner join admin on (lapangan.username=admin.username) where id_lap = '$id_lap'");
 						$pilih = mysqli_fetch_array($sel);
 						//memanggil data dari database yang memiliki id_lap sesuai yang dipilih oleh member
 						?>
@@ -86,13 +86,6 @@ if(isset($_SESSION['member'])){
                               <input type="text" id="first-name" name="id_book" required="required" class="form-control col-md-7 col-xs-12" value="<?php echo $nextID; ?>" readonly>
                               <input type="hidden" id="first-name" required="required" name="username" class="form-control col-md-7 col-xs-12" value="<?php echo $sql_sel['username_member']; ?>" readonly>
                               <input type="hidden" id="id_lap" name="id_lap" required="required" class="form-control col-md-7 col-xs-12" value="<?php echo $pilih['id_lap']; ?>" readonly>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Nama Futsal<span class="required"></span>
-                            </label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                              <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12" value="<?php echo $pilih['nama_futsal'];?>, <?php echo $pilih['alamat_futsal']; ?>" readonly>
                             </div>
                           </div>
                           <div class="form-group">
