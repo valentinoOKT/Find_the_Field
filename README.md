@@ -8,3 +8,4 @@ Cara menjalankan website:
 2. Buka situs http://localhost/phpmyadmin/ untuk memasukkan databasenya dengan cara membuat database baru dan sesuaikan nama database dengan database dengan ada pada proyek ini.
 3. Impor database yang ada pada proyek ini.
 4. Buka situs http://localhost/Find_the_Field/ agar dapat membuka websitenya. 
+
