@@ -27,8 +27,9 @@
     
     /* Add a gray background color and some padding to the footer */
     footer {
-      background-color: #f2f2f2;
+      background-color: #0a942f;
       padding: 25px;
+      color: white;
     }
   </style>
 </head>
@@ -64,7 +65,7 @@ mysqli_query($koneksi, "update transaksi set status='Selesai' where ((tgl_main <
      ?>
 
 <div >
-    <div class="container w3-content" style="max-width:1400px;margin-top:20px">
+    <div class="container w3-content" style="max-width:800px;margin-top:20px">
       <!-- The Grid -->
       <div class="w3-row">
         
@@ -76,7 +77,7 @@ mysqli_query($koneksi, "update transaksi set status='Selesai' where ((tgl_main <
 		
 		if($cek <> 0){?>
           <!-- Middle Column -->
-        <div class="w3-col m9" style="margin-top:-10px;">
+        <div class="w3-col m9" style="margin-top:-10px; width: 100%">
          <?php
     $batas = 3;
     $pg = isset( $_GET['pg'] ) ? $_GET['pg'] : "";
@@ -96,7 +97,9 @@ mysqli_query($koneksi, "update transaksi set status='Selesai' where ((tgl_main <
     
       
         
-    <div class="w3-container w3-card-2 w3-round" style="margin-left: 250px; margin-top:10px; background-color:#076921"><br>
+    <div class="w3-container w3-card-2 w3-round" style="margin-top:10px; background-color:
+#10b542
+"><br>
          
               <div class="w3-row-padding" style="margin:0 -16px">
                 <div class="w3-half">
