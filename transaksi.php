@@ -14,12 +14,12 @@ if(isset($_SESSION['member'])){
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
-    <link rel="shortcut icon" href="assets/images/Goputsalgaji.png">
+    <link rel="shortcut icon" href="assets/Logo.png">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>GO Futsal || Pemesanan</title>
+    <title>Halaman Pemesanan</title>
     <!-- Custom Theme Style -->
     
     <link href="assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet">

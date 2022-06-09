@@ -13,7 +13,7 @@ if(isset($_SESSION['admin'])){
 <html lang="en">
 <head>
   <title>Halaman Admin</title>
-  <link rel="shortcut icon" href="../assets/images/icon.png">
+  <link rel="shortcut icon" href="../assets/Logo.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
