@@ -9,3 +9,10 @@ Cara menjalankan website:
 3. Impor database yang ada pada proyek ini.
 4. Buka situs http://localhost/Find_the_Field/ agar dapat membuka websitenya. 
 
+Login sebagai Member:
+Username: user
+Password: user123
+
+Login sebagai Admin:
+Username: admin
+Password: admin123

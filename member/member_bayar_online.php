@@ -1,5 +1,5 @@
 <div class="w3-container w3-card-2 w3-white w3-round" style="margin-left: 10px"><br>
-        <h4>Konfirmasi Bayar Online (Transfer)</h4>
+        <h4>Bayar Online (Transfer)</h4>
         <hr class="w3-clear">
           <div class="w3-row-padding" style="margin:0 -16px">
             <div class="panel panel-default">
@@ -15,6 +15,7 @@
                                             <th>Mulai</th>
                                             <th>Selesai</th>
                                             <th>Batas Bayar</th>
+                                            <th>Nomor Lapngan</th>
                                             <th>Total Bayar</th>
                                             <th width="10px">Status</th>
                                             <th>Bukti Pembayaran</th>
@@ -33,6 +34,10 @@
                                                  <td><?php echo $sql_res['jam_mulai']; ?></td>
                                                  <td><?php echo $sql_res['jam_berakhir']; ?></td>
                                                  <td><?php echo $sql_res['batas_bayar']; ?></td>
+                                                 <td><?php 
+												 $s = mysqli_query($koneksi,"select lapangan.*, admin.* from lapangan inner join admin on lapangan.username=admin.username where id_lap='$sql_res[id_lap]'");
+												 $p = mysqli_fetch_array($s);
+												 echo "$p[id_lap] ($p[no_lap])"; ?></td>
                                                  <td><?php echo $sql_res['total_harga']; ?></td>
                                                  <td><?php echo $sql_res['status']; ?></td>
                                                  

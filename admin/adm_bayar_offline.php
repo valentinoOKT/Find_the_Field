@@ -18,10 +18,10 @@
         <th>Batas Bayar</th>
         <th>Tanggal Main</th>
         <th>Mulai</th>
-		<th>Selesai</th>
+		    <th>Selesai</th>
         <th>Total Bayar</th>
-		<th>Status</th>
-		<th>Action</th>
+		    <th>Status</th>
+		    <th>Action</th>
       </tr>
     </thead>
     <tbody>

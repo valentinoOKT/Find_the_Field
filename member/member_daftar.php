@@ -35,6 +35,8 @@ if(isset($_POST['submit'])){
  $username = $_POST['username'];
  $nama = $_POST['nama'];
  $password = $_POST['password'];
+
+ echo "<script> alert(\"Registarsi Berhasil !! Silahkan login sebagai member dengan akun yang sudah anda buat.\"); window.location = \"member_daftar.php\"; </script>";
  //acak karakter
 		$cek = mysqli_num_rows(mysqli_query($koneksi,"SELECT * FROM member WHERE username_member ='$username'"));
 		if($cek > 0){

@@ -19,6 +19,7 @@ if(isset($_SESSION['member'])){
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+            <img src="../assets/Logo.png" alt="" width="50" height="50" style="float:left; padding: 3px;" >
             <a class="navbar-brand" href="../index.php" style="color:white;">Find the Field</a>
           </div>
 

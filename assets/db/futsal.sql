@@ -39,11 +39,7 @@ CREATE TABLE `bayar_cod` (
 --
 
 INSERT INTO `bayar_cod` (`id_book`, `jumlah_bayar`, `bayar`, `status`) VALUES
-('KB00000002', 100000, 100000, 'Selesai'),
-('KB00000003', 200000, 200000, 'Selesai'),
-('KB00000005', 130000, 130000, 'Selesai'),
-('KB00000006', 65000, 65000, 'Selesai'),
-('KB00000009', 65000, 65000, 'Selesai');
+('KB00000001', 100000, 100000, 'Selesai');
 
 -- --------------------------------------------------------
 
@@ -64,10 +60,8 @@ CREATE TABLE `bayar_transfer` (
 --
 
 INSERT INTO `bayar_transfer` (`id_book`, `rek_kirim`, `rek_tujuan`, `status`, `bukti_bayar`) VALUES
-('KB00000001', '010020931847834', 'bri', 'Selesai', 'auth-providers.png'),
-('KB00000007', '10910190190', 'bca', 'Menunggu Konfirmasi admin', '20180804_105442.png'),
-('KB00000008', '123123', 'bri', 'Menunggu Konfirmasi admin', 'ACU_Notre-Dame_Guillotine_1400x900.jpg'),
-('KB00000010', '10910190190', 'bca', 'Menunggu Konfirmasi admin', '20180804_105442.png');
+('KB00000002', '123123', 'bri', 'Selesai', '20180804_105442.png');
+
 
 -- --------------------------------------------------------
 
@@ -129,12 +123,8 @@ CREATE TABLE `member` (
 --
 
 INSERT INTO `member` (`username_member`, `nama`, `password`) VALUES
-('asw', 'Educational To', '123'),
-('bf', 'Valentino Oktawan', '123'),
-('budi', 'budi indah', '44'),
-('cd', 'Valentino Oktawan', '123'),
-('ds', 'Educational Toys', '11'),
-('samuraigt123', 'budi', '123');
+('user', 'User', 'user123'),
+('valentino', 'Valentino Oktawan', 'tino45');
 
 -- --------------------------------------------------------
 
@@ -153,7 +143,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`username`, `nama_adm`, `password`) VALUES
-('admin', 'Admin', '11');
+('admin', 'Admin', 'admin123');
 
 -- --------------------------------------------------------
 
@@ -180,16 +170,7 @@ CREATE TABLE `transaksi` (
 --
 
 INSERT INTO `transaksi` (`id_book`, `username_member`, `id_lap`, `tgl_book`, `batas_bayar`, `tgl_main`, `jam_mulai`, `jam_berakhir`, `jenis_bayar`, `total_harga`, `status`) VALUES
-('KB00000001', 'risqi17', 'LP003', '2017-01-02 15:26:53', '2017-01-02 21:26:53', '2017-01-03', '18:00:00', '20:00:00', 'transfer', 100000, 'Selesai'),
-('KB00000002', 'risqi17', 'LP003', '2017-01-02 15:36:52', '2017-01-02 21:36:52', '2017-01-03', '18:00:00', '20:00:00', 'cod', 100000, 'Selesai'),
-('KB00000003', 'rijal-86K9', 'LP002', '2017-01-02 15:46:43', '2017-01-02 21:46:43', '2017-01-03', '12:00:00', '14:00:00', 'off cod', 200000, 'Selesai'),
-('KB00000004', 'risqi17', 'LP001', '2017-01-02 20:51:41', '2017-01-03 02:51:41', '2017-01-03', '17:00:00', '19:00:00', 'transfer', 130000, 'Dibatalkan'),
-('KB00000005', 'risqi17', 'LP001', '2022-05-30 11:11:25', '2022-05-30 18:11:25', '2022-05-31', '08:00:00', '10:00:00', 'cod', 130000, 'Selesai'),
-('KB00000006', 'budi', 'LP001', '2022-05-30 13:06:15', '2022-05-30 20:06:15', '2022-05-31', '14:00:00', '15:00:00', 'cod', 65000, 'Selesai'),
-('KB00000007', 'budi', 'LP001', '2022-05-30 13:28:45', '2022-05-30 20:28:45', '2022-05-31', '17:00:00', '18:00:00', 'transfer', 65000, 'Menunggu Konfirmasi admin'),
-('KB00000008', 'ds', 'LP002', '2022-05-30 14:30:46', '2022-05-30 21:30:46', '2022-06-30', '15:00:00', '17:00:00', 'transfer', 200000, 'Menunggu Konfirmasi admin'),
-('KB00000009', 'ds', 'LP001', '2022-05-30 14:32:03', '2022-05-30 21:32:03', '2022-05-31', '15:00:00', '16:00:00', 'cod', 65000, 'Selesai'),
-('KB00000010', 'ds', 'LP001', '2022-05-30 14:42:23', '2022-05-30 21:42:22', '2022-05-31', '14:00:00', '15:00:00', 'transfer', 65000, 'Menunggu Konfirmasi admin');
+('KB00000001', 'user', 'LP003', '2017-01-02 15:26:53', '2017-01-02 21:26:53', '2017-01-03', '18:00:00', '20:00:00', 'transfer', 100000, 'Selesai');
 
 --
 -- Indexes for dumped tables

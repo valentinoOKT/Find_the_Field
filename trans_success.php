@@ -120,22 +120,6 @@ if(isset($_SESSION['member'])){
                               <h4>Total Harga &nbsp;&nbsp;&nbsp;&nbsp;: <?php echo $s['total_harga']; ?> </h4>
                             </div>
                           </div>
-                          
-                          <div class="form-group">
-                            <label class="control-label col-md-2 col-sm-2 col-xs-12" for="first-name"><span class="required"></span>
-                            </label>
-                            <div class="col-md-7 col-sm-7 col-xs-12">
-                              <h3 align="center">Selamat bermain dengan menunjukkan halaman ini atau dengan menunjukkan bukti email yang telah dikirim ke email Anda kepada admin tempat futsal</h3>
-                            </div>
-                          </div>
-                          
-                          <div class="form-group">
-                            <label class="control-label col-md-4 col-sm-4 col-xs-12" for="first-name"><span class="required"></span>
-                            </label>
-                            <div class="col-md-7 col-sm-7 col-xs-12">
-                              <img src="assets/images/Goputsal2.png" style="width:200px; height:50px;">
-                            </div>
-                          </div>
                       </div>
           </div>
         </div>

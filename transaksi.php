@@ -254,7 +254,7 @@ if(isset($_SESSION['member'])){
 if($simpan & $jenis_bayar=='transfer'){ //jika simpan data berhasil dan jenis bayar = transfer 
 	echo "<script> alert(\"Silakan Lakukan Pembayaran\"); window.location = \"trans_upload_bayar.php?kd=$id_book\"; </script>";
 	} elseif($jenis_bayar=='cod') { // dan jika jenis bayar cod
-	echo "<script> alert(\"Segera Lakukan Pembayaran Kepada admin Futsal Yang Dituju\"); window.location = \"index.php\"; </script>";
+	echo "<script> alert(\"Segera Lakukan Pembayaran Pada Penjaga Lapangan di Tempat Kasir.\"); window.location = \"index.php\"; </script>";
 		} else { //dan jika tidak
 		echo "<script> alert(\"Maaf, Terjadi Kesalahan...\"); window.location = \"index.php\"; </script>";		
 			}
