@@ -32,11 +32,13 @@ Username: admin
 Password: admin123
 
 ## Feature
-* Login dan Register
-* Katalog Lapangan
-* Seacrh Bar
-* Booking Schedule
-* Halaman Admin
+- [x] Login dan Register
+- [x] Katalog Lapangan
+- [x] Search Bar
+- [x] Booking Schedule
+- [ ] Halaman Admin (Masih dalam Pengembangan)
+- [x] Form Booking
+- [x] Detail Pemesanan Lapangan 
 
 ### Refrence Link
  - [https://tekno.tempo.co/read/1127943/futsaloka-aplikasi-untuk-pesan-lapangan-futsal-dan-bulu-tangkis](https://tekno.tempo.co/read/1127943/futsaloka-aplikasi-untuk-pesan-lapangan-futsal-dan-bulu-tangkis)
