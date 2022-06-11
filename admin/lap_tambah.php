@@ -93,9 +93,11 @@
 			$harga = $_POST['harga'];
 			$no_lap = $_POST['no_lap'];
 			//simpan foto
+      
 			$filename = $_FILES['foto']['name'];
 			$lokasi = $_FILES['foto']['tmp_name'];
 			copy($lokasi, "assets/foto_lap/".$filename);
+
 			//menyimpan data ke dalam database
 			$sql= "insert into lapangan values ('$id_lap','$jenis_rumput', '$filename', '$harga', '$no_lap', '$username')";
 			$query = mysqli_query($koneksi,$sql);
