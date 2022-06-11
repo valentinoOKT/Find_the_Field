@@ -16,7 +16,7 @@
     <style>
   	body{ 
 			padding-top: 40px;
-			background-color:#CCC;	
+			background-color:white;	
 	 }
     .modal-title {
       color: #424e5e;
@@ -90,7 +90,7 @@
         
    
     
-        <div class="w3-container w3-card-2 w3-round" style="margin-left: 250px; margin-top:10px; background-color:#076921"><br>
+        <div class="w3-container w3-card-2 w3-round" style="margin-top:10px; background-color:#076921"><br>
          
          <div class="w3-row-padding" style="margin:0 -16px">
            <div class="w3-half">
