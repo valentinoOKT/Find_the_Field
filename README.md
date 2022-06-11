@@ -19,13 +19,13 @@ Karena proyek ini menggunakan PHP, kami harapkan anda sudah mendownload XAMPP de
 4. Buka situs http://localhost/Find_the_Field/ agar dapat membuka websitenya. 
 
 ## Dummy Account
-**Bold**Login sebagai Member:**Bold**
+**Bold**Login sebagai Member:
 
 Username: user
 
 Password: user123
 
-**Bold**Login sebagai Admin:**Bold**
+**Bold**Login sebagai Admin:
 
 Username: admin
 
