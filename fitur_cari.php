@@ -27,8 +27,9 @@
     
     /* Add a gray background color and some padding to the footer */
     footer {
-      background-color: #f2f2f2;
+      background-color: #0a942f;
       padding: 25px;
+      color: white;
     }
 
   .carousel-inner img {
@@ -54,12 +55,11 @@
      ?>
 
         <!-- Page Container -->
-    <div class="container w3-content" style="max-width:1400px;margin-top:20px">
+        <div class="container w3-content" style="max-width:800px;margin-top:20px">
       <!-- The Grid -->
-      <div class="w3-row">
-        
+
           <!-- Middle Column -->
-        <div class="w3-col m9" style="margin-top:-10px;">
+        <div class="w3-col m9" style="margin-top:-10px; width: 100%">
            
         <?php 
 		include ("koneksi.php");
