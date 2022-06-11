@@ -35,9 +35,9 @@ Password: admin123
 * Halaman Admin
 
 ### Refrence Link
- - [https://tekno.tempo.co/read/1127943/futsaloka-aplikasi-untuk-pesan-lapangan-futsal-dan-bulu-tangkis](]https://tekno.tempo.co/read/1127943/futsaloka-aplikasi-untuk-pesan-lapangan-futsal-dan-bulu-tangkis)
-- [https://stokcoding.com/sistem-informasi-booking-futsal-online-php/](]https://stokcoding.com/sistem-informasi-booking-futsal-online-php/)
-- [https://www.tribunnews.com/bisnis/2019/02/09/laparaga-tawarkan-cara-booking-lapangan-olahraga-online-baru-aktif-di-semarang](]https://www.tribunnews.com/bisnis/2019/02/09/laparaga-tawarkan-cara-booking-lapangan-olahraga-online-baru-aktif-di-semarang)
+ - [https://tekno.tempo.co/read/1127943/futsaloka-aplikasi-untuk-pesan-lapangan-futsal-dan-bulu-tangkis](https://tekno.tempo.co/read/1127943/futsaloka-aplikasi-untuk-pesan-lapangan-futsal-dan-bulu-tangkis)
+- [https://stokcoding.com/sistem-informasi-booking-futsal-online-php/](https://stokcoding.com/sistem-informasi-booking-futsal-online-php/)
+- [https://www.tribunnews.com/bisnis/2019/02/09/laparaga-tawarkan-cara-booking-lapangan-olahraga-online-baru-aktif-di-semarang](https://www.tribunnews.com/bisnis/2019/02/09/laparaga-tawarkan-cara-booking-lapangan-olahraga-online-baru-aktif-di-semarang)
 
 ## Team
 * [ Fachry Husaini ] [https://github.com/Fachusain](https://github.com/Fachusain)
