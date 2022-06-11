@@ -88,14 +88,6 @@ if(isset($_SESSION['member'])){
                             <label class="control-label col-md-4 col-sm-4 col-xs-12" for="first-name"><span class="required"></span>
                             </label>
                             <div class="col-md-7 col-sm-7 col-xs-12">
-                              <h4>Nama Futsal &nbsp;&nbsp;: <?php echo $w['nama_futsal']; ?> </h4>
-                            </div>
-                          </div>
-                          
-                          <div class="form-group">
-                            <label class="control-label col-md-4 col-sm-4 col-xs-12" for="first-name"><span class="required"></span>
-                            </label>
-                            <div class="col-md-7 col-sm-7 col-xs-12">
                               <h4>No Lapangan &nbsp;: <?php echo $q['no_lap']; ?> </h4> </h4>
                             </div>
                           </div>

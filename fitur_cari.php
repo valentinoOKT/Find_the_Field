@@ -77,9 +77,9 @@
     if(isset($_POST['cari'])){ //jika search dilakukan maka menjalankan query bagian ini
 			if(!($_REQUEST['mencari'] == '')){ // jika form cari tidak kosong
 				$cari = $_REQUEST['mencari']; //variabel berisi inputan dari search
-			  $sql = "select lapangan.* from lapangan inner join admin on (lapangan.username=admin.username) where no_lap like '%$cari%' limit $posisi, $batas"; //query memilih data dari tabel lapangan dan admin yang memiliki nama tempat futsal mirip dengan yang dicari 
+			  $sql = "select lapangan.* from lapangan inner join admin on (lapangan.username=admin.username) where no_lap like '%$cari%' limit $posisi, $batas"; //query memilih data dari tabel lapangan dan admin yang memiliki nomor tempat futsal mirip dengan yang dicari 
 			}else{ // jika form cari kosong
-				$sql = "select lapangan.* from lapangan inner join admin on (lapangan.username=admin.username) where no_lap like '%%' limit $posisi, $batas"; //query memilih data dari tabel lapangan dan admin yang memiliki nama tempat futsal mirip dengan yang dicari
+				$sql = "select lapangan.* from lapangan inner join admin on (lapangan.username=admin.username) where no_lap like '%%' limit $posisi, $batas"; //query memilih data dari tabel lapangan dan admin yang memiliki nomor tempat futsal mirip dengan yang dicari
 			}
 		} 
 			$mencari = mysqli_query($koneksi,$sql);
