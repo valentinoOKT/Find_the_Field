@@ -22,11 +22,13 @@ Karena proyek ini menggunakan PHP, kami harapkan anda sudah mendownload XAMPP de
 Login sebagai Member:
 
 Username: user
+
 Password: user123
 
 Login sebagai Admin:
 
 Username: admin
+
 Password: admin123
 
 ## Feature
