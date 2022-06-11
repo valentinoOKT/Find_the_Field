@@ -59,7 +59,7 @@ if($_GET['lap']=="delete"){
                     window.location='adm_profil.php';
                     </script>";
 }}?>
-<!-- Page Container -->
+<!-- Container -->
 <div class="container-fluid w3-content" style="max-width:1400px;margin-top:60px">
 
 <!-- Modal Popup untuk Harga--> 
@@ -129,14 +129,14 @@ if($_GET['lap']=="delete"){
           </div>
         </div>
       </div>
-    <!-- End Left Column -->
+    <!-- Akhir Kolom Kiri-->
     </div>
 
-    <!-- Middle Column -->
+    <!-- Kolom Tengah -->
     <div class="w3-col m9">
     
     
-    <!-- PHP MIDDLE VIEW -->
+    <!-- Php Bagian Tengah -->
     <?php
     	if(isset($_GET['url'])){
         	if($_GET['url']=="pesanoff"){
@@ -199,15 +199,8 @@ if($_GET['lap']=="delete"){
                                             <td><?php echo $sql_res['no_lap']; ?></td>
                                             <td><?php echo $sql_res['jenis_rumput']; ?></td>
                                             <td class="center"><?php
-											//$sel_harga = "select * from harga where id_lap = $sql_res[id_lap] ";
-											//$qry = mysqli_query($koneksi,$sel_harga);
-											//if($qry > 0){
-												//echo "<a href='#' class='open_modal btn btn-success btn-xs' id='$sql_res[id_lap]'><span class='glyphicon glyphicon-zoom-in'></span> Lihat</a>&nbsp;<a href='#' class='open_modal1 btn btn-warning btn-xs' id='$sql_res[id_lap]'><span class='glyphicon glyphicon-edit'></span> Edit</a>";
-												//} else {
-													//echo "<a href='#' class='open_modal1 btn btn-warning btn-xs' id='$sql_res[id_lap]'><span class='glyphicon glyphicon-pencil'></span> Isi Harga</a>";
-													//}
-													echo $sql_res['harga'];
-											 ?></td>
+													                  echo $sql_res['harga'];
+											                      ?></td>
                                             <td class="center">
                                             <a href="#" class='open_modal btn btn-primary btn-xs' id='<?php echo $sql_res['id_lap']; ?>'><span class="glyphicon glyphicon-edit"></span> Edit</a>&nbsp
                                             <a href="#" onClick="confirm_modal('lap_pro_del.php?&id_lap=<?php echo $sql_res['id_lap']; ?>');" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Delete</a></td>
@@ -231,13 +224,11 @@ if($_GET['lap']=="delete"){
       ?>
       
 
-    <!-- End Middle Column -->
+    <!-- Akhir Kolom Tengah -->
     </div>
-
-  <!-- End Grid -->
   </div>
 
-<!-- End Page Container -->
+<!-- Akhiran halaman container -->
 </div></div>
 </div>
 <br>
@@ -264,7 +255,7 @@ function myFunction(id) {
     }
 }
 
-// Used to toggle the menu on smaller screens when clicking on the menu button
+// Digunakan untuk mengaktifkan menu pada layar yang lebih kecil saat mengklik tombol menu
 function openNav() {
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
@@ -373,7 +364,9 @@ function openNav() {
         TableManageButtons.init();
       });
     </script>
-    <!-- /Datatables -->
+
+    <!-- /Data tabel -->
+
 <script>
 		$(function() {
 			$("#no_lap1").change(function(){
@@ -528,7 +521,7 @@ function openNav() {
     <!-- Total Harga -->
     
     
-    <!-- Datatables -->
+    <!-- Data tabel -->
     <script>
       $(document).ready(function() {
         var handleDataTableButtons = function() {
