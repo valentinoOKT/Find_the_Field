@@ -15,7 +15,7 @@
                                             <th>Mulai</th>
                                             <th>Selesai</th>
                                             <th>Batas Bayar</th>
-                                            <th>Nomor Lapngan</th>
+                                            <th>Nomor Lapangan</th>
                                             <th>Total Bayar</th>
                                             <th width="10px">Status</th>
                                             <th>Bukti Pembayaran</th>

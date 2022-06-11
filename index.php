@@ -97,10 +97,8 @@ mysqli_query($koneksi, "update transaksi set status='Selesai' where ((tgl_main <
     
       
         
-    <div class="w3-container w3-card-2 w3-round" style="margin-top:10px; background-color:
-#10b542
-"><br>
-         
+    <div class="w3-container w3-card-2 w3-round" style="margin-top:10px; background-color:#10b542">
+      <br>
               <div class="w3-row-padding" style="margin:0 -16px">
                 <div class="w3-half">
                   <img src="admin/assets/foto_lap/<?php echo $r['foto']; ?>" style="width:100%; min-height:100%;" alt="Gambar Lapangan" class="w3-margin-bottom">
@@ -118,9 +116,7 @@ mysqli_query($koneksi, "update transaksi set status='Selesai' where ((tgl_main <
                 </form>
                 </div>
                 </div>
-            
-            
-          </div>
+            </div>
     <?php
     $no++;
     }

@@ -4,7 +4,7 @@
           <div class="w3-row-padding" style="margin:0 -16px">
             <div class="panel panel-default">
                         <div class="panel-heading">
-                             Tabel Lapangan
+                             Tabel Pemesanan Anda
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
