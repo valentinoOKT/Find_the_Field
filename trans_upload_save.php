@@ -4,7 +4,7 @@ include "koneksi.php";
 $id_book = $_POST['id_book'];
 $rek_kirim = $_POST['rek_kirim'];
 $rek_tuju = $_POST['rek_tuju'];
-$status = "Selesai";
+$status = "Lunas";
 $foto = $_FILES['foto_bukti']['name'];
 $lokasi= $_FILES['foto_bukti']['tmp_name'];
 //simpan foto ke folder
@@ -17,9 +17,9 @@ $pro = mysqli_query($koneksi, $simpan);
     
 	
 	if($pro && $s){ //jika berhasil menyimpan dan update
-		echo "<script> window.location = \"index.php\"; </script>";	
+		echo "<script> window.location = \"index1.php\"; </script>";	
 		} else { //jika tidak
-		echo "<script> alert(\"Maaf, Terjadi Kesalahan...\"); window.location = \"index.php\"; </script>";		
+		echo "<script> alert(\"Maaf, Terjadi Kesalahan...\"); window.location = \"index1.php\"; </script>";		
 			}
 
 ?>

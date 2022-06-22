@@ -35,9 +35,9 @@ if($ceklap > 0){
 if($simpan & $jenis_bayar=='transfer'){
 	echo "<script> alert(\"Silakan Lakukan Pembayaran\"); window.location = \"trans_upload_bayar.php?kd=$id_book\"; </script>";
 	} elseif($jenis_bayar=='cod') {
-	echo "<script> alert(\"Segera Lakukan Pembayaran Pada Penjaga Lapangan di Tempat Kasir.\"); window.location = \"index.php\"; </script>";
+	echo "<script> alert(\"Segera Lakukan Pembayaran Pada Penjaga Lapangan di Tempat Kasir.\"); window.location = \"index1.php\"; </script>";
 		} else {
-		echo "<script> alert(\"Maaf, Terjadi Kesalahan...\"); window.location = \"index.php\"; </script>";		
+		echo "<script> alert(\"Maaf, Terjadi Kesalahan...\"); window.location = \"index1.php\"; </script>";		
 			}
 	}
 	

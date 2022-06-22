@@ -8,7 +8,7 @@
         <h4 class="modal-title">Masuk sebagai member</h4>
       </div>
       <div class="modal-body">
-        <form class="form-horizontal" method="post" action="">
+        <form class="form-horizontal" method="post" action="index1.php">
           <div class="form-group">
             <label class="control-label col-sm-3" for="username">Username</label>
             <div class="col-sm-8">
@@ -54,7 +54,7 @@
 					if($_POST['password'] == $cekpass){
 						session_start();
 						$_SESSION['member']=$cekuser;
-							echo "<script> window.location = \"index.php\"; </script>";
+							echo "<script> window.location = \"index1.php\"; </script>";
 						} else {
 							echo "<script> alert(\"Password salah\"); window.location = \"index.php\"; </script>";
 						}

@@ -136,7 +136,7 @@ if(isset($_SESSION['member'])){
 </html>
 <?php 
 }else {
-    echo "<script> alert(\"Silakan Login Sebagai Member\"); window.location = \"index.php\" </script>";
+    echo "<script> alert(\"Silakan Login Sebagai Member\"); window.location = \"index1.php\" </script>";
   }
 ?>
    

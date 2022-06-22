@@ -16,12 +16,9 @@ if(isset($_SESSION['admin'])){
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
             </button>
             <img src="assets/Logo.png" alt="" width="50" height="50" style="float:left; padding: 3px;" >
-            <a class="navbar-brand" href="index.php" style="color: white; padding-left: 20px">Find the Field</a>
+            <a class="navbar-brand" href="index1.php" style="color: white; padding-left: 20px">Find the Field</a>
           </div>
 
 
@@ -73,7 +70,7 @@ if(isset($_SESSION['admin'])){
               <span class="icon-bar"></span>
             </button>
             <img src="assets/Logo.png" alt="" width="50" height="50" style="float:left; padding: 3px;" >
-            <a class="navbar-brand" href="index.php" style="color: white; padding-left: 20px">Find the Field</a>
+            <a class="navbar-brand" href="index1.php" style="color: white; padding-left: 20px">Find the Field</a>
           </div>
 
 
@@ -114,7 +111,7 @@ if(isset($_SESSION['admin'])){
               <span class="icon-bar"></span>
             </button>
             <img src="assets/Logo.png" alt="" width="50" height="50" style="float:left; padding: 3px;" >
-            <a class="navbar-brand" href="index.php" style="color: white; padding-left: 20px">Find the Field</a>
+            <a class="navbar-brand" href="index1.php" style="color: white; padding-left: 20px">Find the Field</a>
           </div>
 
 
