@@ -23,7 +23,7 @@
     </thead>
     <tbody>
     <?php 
-		$sql_sel = "select transaksi.*, lapangan.* from transaksi inner join lapangan on (transaksi.id_lap=lapangan.id_lap) where ((status='Telah Dikonfirmasi' or status='Selesai' or status='Dibatalkan') and jenis_bayar='transfer') and username='$username'";
+		$sql_sel = "select transaksi.*, lapangan.* from transaksi inner join lapangan on (transaksi.id_lap=lapangan.id_lap) where ((status='Telah Dikonfirmasi' or status='Selesai' or status='Lunas' or status='Dibatalkan') and jenis_bayar='transfer') and username='$username'";
 		$query_sel = mysqli_query($koneksi,$sql_sel);
 		while($sql_res = mysqli_fetch_array($query_sel)){
 											
