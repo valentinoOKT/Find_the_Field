@@ -49,13 +49,11 @@ $les = mysqli_fetch_array($cektr);
 
 if($cek > 0){
 //Dibatalkan jika bayar transfer dan telah melewati batas bayar
-mysqli_query($koneksi, "update transaksi set status='Dibatalkan' where batas_bayar <= '$tanggaljam' && jenis_bayar = 'transfer' && (status!='Telah Dikonfirmasi' && status!='Selesai')");
+mysqli_query($koneksi, "update transaksi set status='Dibatalkan' where batas_bayar <= '$tanggaljam' && jenis_bayar = 'transfer' && (status!='Telah Dikonfirmasi' && status!='Lunas')");
 //Dibatalkan jika bayar cod , statusnya masih belum transfer dan telah melewati batas bayar
 mysqli_query($koneksi, "update transaksi set status='Dibatalkan' where batas_bayar <= '$tanggaljam' && jenis_bayar = 'cod' && (status='Menunggu Pembayaran')");
-//Dibatalkan jika bayar off cod(pesan secara langsung ke admin) , statusnya masih belum transfer dan telah melewati batas bayar
-mysqli_query($koneksi, "update transaksi set status='Dibatalkan' where batas_bayar <= '$tanggaljam' && jenis_bayar = 'off cod' && (status='Belum Bayar')");
 //Selesai jika jam berakhir telah melewati waktu sekarang
-mysqli_query($koneksi, "update transaksi set status='Selesai' where ((tgl_main <='$tanggal' && jam_berakhir <='$jam') || (tgl_main <='$tanggal' && jam_berakhir >='$jam')) && (status!='Dibatalkan' && status!='Selesai')");
+mysqli_query($koneksi, "update transaksi set status='Selesai' where ((tgl_main <='$tanggal' && jam_berakhir <='$jam') || (tgl_main <='$tanggal' && jam_berakhir >='$jam')) && (status!='Dibatalkan' && status!='Lunas')");
 	}
 ?>
   <?php

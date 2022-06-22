@@ -23,7 +23,7 @@
                                     </thead>
                                     <tbody>
                                     <?php
-                                     		$sql_sel = "select * from transaksi where ((status='Menunggu Transfer' or status='Selesai') and jenis_bayar = 'transfer') and username_member='$username'";
+                                     		$sql_sel = "select * from transaksi where ((status='Menunggu Transfer' or status='Lunas') and jenis_bayar = 'transfer') and username_member='$username'";
                                             $query_sel = mysqli_query($koneksi,$sql_sel);
                                             while($sql_res = mysqli_fetch_array($query_sel)){
                                                                                 
@@ -45,7 +45,7 @@
                                                   <?php 
 												  	$a = mysqli_query($koneksi, "select * from bayar_transfer where id_book='$sql_res[id_book]'");
 													$c = mysqli_num_rows($a);
-													if($sql_res['status'] == 'Menunggu Transfer' || $sql_res['status'] == 'Selesai'){
+													if($sql_res['status'] == 'Menunggu Transfer' || $sql_res['status'] == 'Lunas'){
                                                     if($c == 0){
                                                         echo "<a href='../trans_upload_bayar.php?kd=$sql_res[id_book]' >Upload Bukti</a>";
                                                         } else {
