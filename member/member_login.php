@@ -30,7 +30,7 @@
       </div>
     </div>
     <?php
-	include ("../index1.php.php");
+	include ("../koneksi.php");
 	if(isset($_POST['loginmember'])){
 		$username = $_POST['username'];
 		$password = $_POST['password'];
@@ -49,7 +49,7 @@
 					if($_POST['password'] == $cekpass){
 						session_start();
 						$_SESSION['member']=$cekuser;
-							echo "<script> window.location = \"../index.php\"; </script>";
+							echo "<script> window.location = \"../index1.php\"; </script>";
 						} else {
 							echo "<script> alert(\"Password salah\"); window.location = \"../index.php\"; </script>";
 						}
