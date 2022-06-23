@@ -30,10 +30,8 @@
       </div>
     </div>
     <?php
-<<<<<<< HEAD
 	include ("../koneksi.php");
-=======
->>>>>>> 587aea39bd537659ef8129b42d2f8bddbec1cbca
+
 	if(isset($_POST['loginmember'])){
 		$username = $_POST['username'];
 		$password = $_POST['password'];
