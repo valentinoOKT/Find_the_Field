@@ -30,6 +30,10 @@
       </div>
     </div>
     <?php
+<<<<<<< HEAD
+=======
+
+>>>>>>> 736f7786c2c18c721f41f82ac311c40d1921fd7d
 	include ("../koneksi.php");
 
 	if(isset($_POST['loginmember'])){

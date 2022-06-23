@@ -72,7 +72,7 @@ if($_GET['lap']=="delete"){
         
           <button onclick="myFunction('Demo2')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Riwayat Booking</button>
           <div id="Demo2" class="w3-accordion-content w3-container">
-			      <a href="member_profil.php?url=history"> Booking Schedule</a>
+			      <a href="member_profil.php?url=history"> Riwayat Booking</a>
           </div>
           
         </div>
@@ -88,7 +88,7 @@ if($_GET['lap']=="delete"){
     <?php
     	if(isset($_GET['url'])){
         	if($_GET['url']=="history"){
-				include "member_booking_schedule.php";
+				include "member_riwayat_booking.php";
       ?> 
       
       <?php
@@ -107,7 +107,7 @@ if($_GET['lap']=="delete"){
       
       <?php 
       		}else{
-				include "member_booking_schedule.php";
+				include "member_riwayat_booking.php";
       ?>
        
       	
