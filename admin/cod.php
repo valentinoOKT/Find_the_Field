@@ -2,6 +2,9 @@
  <DOCTYPE html>
 <html>
 	<head>
+    <!-- Other tags -->
+   <meta name="dicoding:email" content="valentinookt45@gmail.com">
+    <!-- Other tags -->
 		<title>COD </title>
      </head>
      <body> 

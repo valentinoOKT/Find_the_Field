@@ -13,6 +13,9 @@ if(isset($_SESSION['admin'])){
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Other tags -->
+	<meta name="dicoding:email" content="valentinookt45@gmail.com">
+    <!-- Other tags -->
 	<title>Form otomatis</title>
 
 	<style>

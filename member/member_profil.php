@@ -12,6 +12,9 @@ if(isset($_SESSION['member'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Other tags -->
+  <meta name="dicoding:email" content="valentinookt45@gmail.com">
+    <!-- Other tags -->
   <title>Halaman Member</title>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="../assets/Logo.png">

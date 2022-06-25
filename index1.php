@@ -1,4 +1,7 @@
 <head>
+  <!-- Other tags -->
+  <meta name="dicoding:email" content="valentinookt45@gmail.com">
+    <!-- Other tags -->
   <title>Find the Field</title>
   <link rel="shortcut icon" href="assets/Logo.png">
   <meta charset="utf-8">
